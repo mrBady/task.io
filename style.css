@@ -4,8 +4,7 @@ body{
 .task__container {
    margin: 0 auto;
    max-width: 1230px;
-   padding-left: 15px;
-   padding-right:15px;
+   padding: 0 15px;
 }
 .head {
    margin-top: 40px;
@@ -14,16 +13,20 @@ body{
    display: flex;
    gap: 15px;
    flex-wrap: wrap;
+   @media (max-width: 768px) {
+      flex-direction: column;
+   }
 }
 .head__input-title,
 .head__input-description {
-   flex-basis: 20%;
+   width: 270px;
    padding: 10px;
    background: #eeeeee;
    border-radius: 15px;
    
 }
 .head__button {
+   width: 200px;
    border-radius: 15px;
    padding: 15px 45px;
    background: #d18663;
